@@ -23,6 +23,7 @@ module.exports = {
     }
   },
   rules: {
+    'react/no-unescaped-entities': 0,
     'class-methods-use-this': 0,
     'comma-dangle': ['error', 'never'],
     'linebreak-style': 0,

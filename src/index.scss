@@ -1,13 +1,14 @@
 @charset "utf-8";
 
 body{
-  background-color: #FFEDDF;
+  background-color: #FEE6CA;
 }
 
 .container-fluid {
   width: 100%;
   height: 4em;
-  background-color: #f5f0eb;
+  border: #0000007b solid 1px;
+  background-color: #fbebda;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
   position: relative; 
 }
@@ -42,7 +43,6 @@ a:hover::after {
 }
   
 #button {
-  background-color: rgba(240, 128, 128, 0);
   border: none;
   text-decoration: none !important;
 }
@@ -59,7 +59,7 @@ a:hover::after {
 }
 
 .nav-item {
-  font-family: "Josefin Sans", sans-serif;
+  font-family: "Roboto Condensed", sans-serif;
   color: #000000;
   padding: 0  80px;
 }
@@ -85,7 +85,7 @@ a:hover::after {
 
 .text-content {
   width: 60%;
-  font-family: "Josefin Sans", sans-serif;
+  font-family: "Aclonica", sans-serif;
 }
 
 .text-content > h1  {
@@ -107,11 +107,12 @@ a:hover::after {
 .text-content > p {
   font-size: 2em;
   margin-bottom: 30px;
+  font-family: "Roboto Condensed", sans-serif;
 }
 
 .cta-button {
-  background-color: #000;
-  color: #fff;
+  background-color: #F7C32E;
+  color: #000000;
   padding: 15px 30px;
   border: none;
   border-radius: 25px;
