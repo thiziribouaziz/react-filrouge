@@ -1,5 +1,140 @@
 @charset "utf-8";
 
-h1 {
-  color: red;
+body{
+  background-color: #FFEDDF;
 }
+
+.container-fluid {
+  width: 100%;
+  height: 4em;
+  background-color: #f5f0eb;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+  position: relative; 
+}
+
+a:visited {
+  color: inherit; /* Garde la couleur du lien non cliqué */
+  text-decoration: none; /* Supprime la décoration, par exemple le soulignement */
+}
+
+a {
+  text-decoration: none; /* Enlève le soulignement par défaut */
+  color: inherit !important; /* Garde la couleur du lien non survolé */
+  position: relative; /* Nécessaire pour le positionnement du pseudo-élément */
+}
+
+a::after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 3px; /* Épaisseur du trait */
+  background-color: #1D972C; /* Couleur du trait */
+  position: absolute;
+  left: 2;
+  bottom: 10px;
+  border-radius: 10px; /* Arrondit les bords du trait */
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.5);
+  transition: width 0.3s ease; /* Animation pour l'apparition du trait */
+}
+
+a:hover::after {
+  width: 79%; 
+}
+  
+#button {
+  background-color: rgba(240, 128, 128, 0);
+  border: none;
+  text-decoration: none !important;
+}
+
+.nav-link-container {
+  background-color: #ffeddf;
+  padding: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.nav-list {
+  display: flex; 
+  justify-content: space-between !important;
+}
+
+.nav-item {
+  font-family: "Josefin Sans", sans-serif;
+  color: #000000;
+  padding: 0  80px;
+}
+
+.nav-item svg {
+  margin-right: 6px; 
+  margin-bottom: 6px;
+}
+
+.navbar {
+  padding-top: 0px !important;
+}
+
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 50px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.text-content {
+  width: 60%;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+.text-content > h1  {
+  font-size: 100px;
+  line-height: 1.2;
+  color: #000;
+  margin-bottom: 20px;
+  line-height: 100px;
+}
+
+.yellow {
+  color: #F7C32E;
+}
+
+.green {
+  color: #4CAF50;
+}
+
+.text-content > p {
+  font-size: 2em;
+  margin-bottom: 30px;
+}
+
+.cta-button {
+  background-color: #000;
+  color: #fff;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 25px;
+  font-size: 1.2em;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.image-content {
+  width: 40%;
+
+  img {
+    display: block;
+    position: absolute;
+    left: 1000px;
+    top: 0px;
+  }
+}
+
+.food-image {
+  max-width: 100%;
+  border-radius: 50%;
+}
+

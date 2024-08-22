@@ -1,18 +1,20 @@
 import React from 'react';
-import {
-  BrowserRouter as Router,
-  Routes,
-  Route
-} from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
-import Home from './components/Home';
-import Error404 from './components/Error404';
+import HomePage from './pages/HomePage';
+import ErrorPage from './pages/ErrorPage';
+import Navbar from './components/Navbar';
+import RecettePage from './pages/RecettePage';
+import LoginPage from './pages/LoginPage';
 
 const RoutesConfig = () => (
   <Router>
+    <Navbar />
     <Routes>
-      <Route index element={<Home />} />
-      <Route path="*" element={<Error404 />} />
+      <Route index element={<HomePage />} />
+      <Route path="*" element={<ErrorPage />} />
+      <Route path="/recette" element={<RecettePage />} />
+      <Route path="/login" element={<LoginPage />} />
     </Routes>
   </Router>
 );
