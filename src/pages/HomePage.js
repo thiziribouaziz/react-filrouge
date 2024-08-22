@@ -5,6 +5,7 @@ const Home = () => (
   <>
     <div className="container">
       <div className="text-content">
+        <h2>HEALTHY HUB</h2>
         <h1>
           Mangez sain,<br /> vivez bien,<br />
           <span className="yellow">rayonnez</span><br />
@@ -15,7 +16,7 @@ const Home = () => (
         recettes de cuisine, conseils de conservation et hygiène alimentaire.
         </p>
         <button className="cta-button">
-        C'est parti ! 💚
+        C'est parti !
         </button>
       </div>
       <div className="image-content">

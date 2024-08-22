@@ -7,10 +7,16 @@ body{
 .container-fluid {
   width: 100%;
   height: 4em;
-  border: #0000007b solid 1px;
+  border: #3f944277 solid 1px;
   background-color: #fbebda;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
   position: relative; 
+
+  img{
+    display: block;
+    position: absolute;
+    left: 80px;
+  }
 }
 
 a:visited {
@@ -30,21 +36,20 @@ a::after {
   width: 0;
   height: 3px; /* Épaisseur du trait */
   background-color: #1D972C; /* Couleur du trait */
-  position: absolute;
-  left: 2;
-  bottom: 10px;
   border-radius: 10px; /* Arrondit les bords du trait */
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.5);
-  transition: width 0.3s ease; /* Animation pour l'apparition du trait */
+  transition: width 0.5s ease; /* Animation pour l'apparition du trait */
 }
 
 a:hover::after {
-  width: 79%; 
+  width: 100%; 
 }
   
 #button {
   border: none;
   text-decoration: none !important;
+  background-color: #fbebda;
+  padding-right: 50px;
 }
 
 .nav-link-container {
@@ -60,8 +65,14 @@ a:hover::after {
 
 .nav-item {
   font-family: "Roboto Condensed", sans-serif;
-  color: #000000;
-  padding: 0  80px;
+  font-size: 1.2em;
+}
+
+.navbar-nav {
+flex-direction: row;
+justify-content: center;
+gap: 160px;
+padding-left: 219px;
 }
 
 .nav-item svg {
@@ -76,24 +87,24 @@ a:hover::after {
 
 .container {
   display: flex;
-  align-items: center;
+  gap: 30px;
   justify-content: space-between;
   padding: 50px;
-  max-width: 1200px;
   margin: 0 auto;
 }
 
 .text-content {
-  width: 60%;
+  width: 80%;
   font-family: "Aclonica", sans-serif;
 }
 
 .text-content > h1  {
-  font-size: 100px;
-  line-height: 1.2;
+  font-size: 80px;
+  line-height: 2;
   color: #000;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   line-height: 100px;
+  padding-bottom: 40px;
 }
 
 .yellow {
@@ -105,14 +116,23 @@ a:hover::after {
 }
 
 .text-content > p {
-  font-size: 2em;
+  font-size: 1.5em;
+  font-weight: 350;
   margin-bottom: 30px;
   font-family: "Roboto Condensed", sans-serif;
 }
 
+.text-content > h2 {
+  font-size: 3.3em;
+  font-weight: 280;
+  font-family: "Roboto Condensed", sans-serif;
+  padding-bottom: 40px;
+  padding-left: 8px;
+}
+
 .cta-button {
   background-color: #F7C32E;
-  color: #000000;
+  color: #ffffff;
   padding: 15px 30px;
   border: none;
   border-radius: 25px;
@@ -125,17 +145,10 @@ a:hover::after {
 
 .image-content {
   width: 40%;
-
   img {
     display: block;
-    position: absolute;
-    left: 1000px;
-    top: 0px;
+    position: relative;
+    left: 185px;
+    bottom: 60px;
   }
 }
-
-.food-image {
-  max-width: 100%;
-  border-radius: 50%;
-}
-
