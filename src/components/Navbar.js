@@ -5,17 +5,17 @@ import myicon from '../img/myicon.svg';
 const Navbar = () => (
     <>
       <nav className="navbar navbar-expand-lg bg-body-tertiary">
-        <div className="container-fluid">
+        <div className="container-fluid1">
           <img alt="logo" src={myicon} />
             <ul className="navbar-nav me-auto mb-2 mb-lg-0">
               <li className="nav-item">
-                <Link className="nav-link active" to="/" >
+                <Link className="nav-link" to="/" >
                   Accueil
                 </Link>
               </li>
 
               <li className="nav-item">
-                <Link className="nav-link" to="/recette" >
+                <Link className="nav-link" to="/recettes" >
                   Recettes
                 </Link>
               </li>
@@ -27,19 +27,23 @@ const Navbar = () => (
               </li>
 
               <li className="nav-item">
-                <Link className="nav-link" to="/recette" >
+                <Link className="nav-link" to="/hygiene" >
                   Hygiène
                 </Link>
               </li>
-            </ul>
 
-                <Link className="nav-item" id="button" to="/submit" >
+              <li className="nav-item">
+                <Link className="nav-link" to="/activities" >
+                  Activités
+                </Link>
+              </li>
+                <Link className="nav-link" id="button" to="/login" >
                 Me Connecter
                 </Link>
-                <Link className="nav-item" id="button" to="/login" >
+                <Link className="nav-link" id="button" to="/submit" >
                 M'inscrire
                 </Link>
-
+            </ul>
         </div>
       </nav>
     </>

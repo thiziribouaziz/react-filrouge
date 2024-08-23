@@ -15,9 +15,9 @@ const Home = () => (
         Rejoignez une communauté qui partage des pratiques alimentaires saines et durables :
         recettes de cuisine, conseils de conservation et hygiène alimentaire.
         </p>
-        <button className="cta-button">
+        <a href="http://127.0.0.1:9090/login" className="cta-button">
         C'est parti !
-        </button>
+        </a>
       </div>
       <div className="image-content">
         <img src={imgaccueil} alt="Healthy food" className="food-image" />
