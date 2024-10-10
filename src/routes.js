@@ -9,6 +9,7 @@ import PasswordPage from './pages/PasswordPage';
 import HygienePage from './pages/HygienePage';
 import Recettes from './recettes/index';
 import Conseils from './recettes/Conseils';
+import Submit from './pages/SubmitPage';
 
 const RoutesConfig = () => (
   <Router>
@@ -21,6 +22,7 @@ const RoutesConfig = () => (
       <Route path="/hygiene" element={<HygienePage />} />
       <Route path="/recettes" element={<Recettes />} />
       <Route path="/conseils" element={<Conseils />} />
+      <Route path="/submit" element={<Submit />} />
     </Routes>
   </Router>
 );

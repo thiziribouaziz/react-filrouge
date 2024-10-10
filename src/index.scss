@@ -1,7 +1,16 @@
 @charset "utf-8";
 
-body{
+body {
   background-color: #FEE6CA;
+}
+
+.error {
+font-family: "Roboto Condensed", sans-serif;
+color: #ed2424;
+font-size: 2.2em;
+padding-left: 700px;
+padding-top: 300px;
+
 }
 
 .container-fluid1 {
@@ -106,12 +115,12 @@ padding-left: 111px;
 .text-content > p {
   font-size: 1.5em;
   font-weight: 350;
-  margin-bottom: 30px;
+  margin-bottom: 60px;
   font-family: "Roboto Condensed", sans-serif;
 }
 
 .text-content > h2 {
-  font-size: 3.3em;
+  font-size: 2.3em;
   font-weight: 280;
   font-family: "Roboto Condensed", sans-serif;
   padding-bottom: 40px;

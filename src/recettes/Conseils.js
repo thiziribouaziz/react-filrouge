@@ -35,7 +35,7 @@ const Conseils = () => (
      <div className="image-content2">
     <img src={frigo} alt="Healthy food" className="div-image2" />
     </div>
-<p>Source de l’Infographie : agriculture.gouv.fr</p>
+    <p>Source de l’Infographie : agriculture.gouv.fr</p>
      </div>
      <h3 className='conseilsh3'>Comment conserver vos aliments hors du frigo ?</h3>
      <p>Certains bocaux, condiments (moutarde, confiture, miel) ou aliments en pots, n’ont
