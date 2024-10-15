@@ -20,7 +20,7 @@ const Home = () => (
         </a>
       </div>
       <div className="image-content">
-        {/* { <img src={imgaccueil} alt="Healthy food" className="food-image" /> } */}
+         <img src={imgaccueil} alt="Healthy food" className="food-image" />
       </div>
     </div>
   </>
