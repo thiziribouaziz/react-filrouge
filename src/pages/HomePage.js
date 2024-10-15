@@ -7,9 +7,9 @@ const Home = () => (
       <div className="text-content">
         <h2>HEALTHY HUB</h2>
         <h1>
-          Mangez sain,<br /> vivez bien,<br />
-          <span className="yellow">rayonnez</span><br />
-          <span className="green">chaque jour.</span>
+          Mangez sain, vivez bien,<br />
+          <span className="yellow">rayonnez </span>
+          <span className="green"> chaque jour.</span>
         </h1>
         <p>
         Rejoignez une communauté qui partage des pratiques alimentaires saines et durables :
@@ -20,7 +20,7 @@ const Home = () => (
         </a>
       </div>
       <div className="image-content">
-        <img src={imgaccueil} alt="Healthy food" className="food-image" />
+        {/* { <img src={imgaccueil} alt="Healthy food" className="food-image" /> } */}
       </div>
     </div>
   </>

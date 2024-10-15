@@ -31,12 +31,6 @@ const Navbar = () => (
                   Hygiène
                 </Link>
               </li>
-
-              <li className="nav-item">
-                <Link className="nav-link" to="/activities" >
-                  Activités
-                </Link>
-              </li>
                 <Link className="nav-link" id="button" to="/login" >
                 Me Connecter
                 </Link>
