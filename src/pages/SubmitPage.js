@@ -17,11 +17,7 @@ const Submit = () => (
         </div>
       </div>
       <div className="col">
-        <input type="text" className="form-control" id="emailOrPhone" placeholder="Numéro mobile ou e-mail" aria-label="Numéro mobile ou e-mail" required />
-      </div>
-      <div className="col">
-      <label htmlFor="password">Votre date de naissance</label>
-        <input type="date" id="dob" name="dob" required />
+        <input type="text" className="form-control" id="emailOrPhone" placeholder="e-mail" aria-label="e-mail" required />
       </div>
       <br></br>
       <div className="col">

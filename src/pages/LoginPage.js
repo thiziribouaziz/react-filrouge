@@ -6,7 +6,7 @@ const LoginPage = () => (
     <form>
       <div className="titre"> <h1>Connectez-vous</h1></div>
       <div className="mb-3">
-        <label htmlFor="exampleInputEmail1" className="form-label">IDENTIFIANT <span className="redstar">*</span></label>
+        <label htmlFor="exampleInputEmail1" className="form-label">Email <span className="redstar">*</span></label>
         <input type="email" className="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"/>
       </div>
       <div className="mb-3">
@@ -20,7 +20,9 @@ const LoginPage = () => (
       <button type="submit" className="btn btn-primary">Se Connecter</button>
       <Link to="/forgottenpassword"> <p className="forgottenpassword">Mot de passe oublié ?</p></Link>
       <hr></hr>
-      <button type="submit" className="btn btn-primary">Créer un compte</button>
+      <Link to="/submit">
+      <button type="submit" className="btn btn-primary">Créer un compte </button>
+      </Link>
     </form>
   </>
 );

@@ -6,7 +6,9 @@ const Navbar = () => (
     <>
       <nav className="navbar navbar-expand-lg bg-body-tertiary">
         <div className="container-fluid1">
+          <Link className="logolink" to="/">
           <img alt="logo" src={myicon} />
+          </Link >
             <ul className="navbar-nav me-auto mb-2 mb-lg-0">
               <li className="nav-item">
                 <Link className="nav-link" to="/" >
